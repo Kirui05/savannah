@@ -1,0 +1,177 @@
+.service-item{
+   position: relative;
+   background: $white;
+   overflow: hidden;
+   transition: all 0.5s ease;
+   margin-bottom: 30px;
+   &.style-1{
+      padding: 55px 60px 60px;
+      @include media-breakpoint-down(lg){
+         padding: 55px 30px 60px;
+      }
+      .service-item-content{
+         position: relative;
+         z-index: 2;
+         .title{
+            font-size: 24px;
+            margin: 0 0 20px;
+            padding: 0 0 20px;
+            position: relative;
+            &:after{
+               content: '';
+               @include size(60px, 2px);
+               background: $theme-color;
+               position: absolute;
+               bottom: 0;
+               left: 0;
+               z-index: 11;
+            }
+         }
+         .read-more{
+            margin-top: 60px;
+         }
+         .box-icon{
+            position: absolute;
+            font-size: 64px;
+            color: $black;
+            right: 0;
+            bottom: 0;
+            transition: all 0.5s ease;
+            svg{
+               width: 64px;
+               fill: $black;
+            }
+         }
+      }
+      .link-overlay{
+         position: absolute;
+         @include size(100%, 100%);
+         top: 0;
+         left: 0;
+         z-index: 11;
+      }
+      &:hover{
+         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+   }
+   &.style-2{
+      padding: 60px 60px 50px;
+      @include media-breakpoint-down(lg){
+         padding: 60px 30px 50px;
+      }
+      .service-box-background{
+         background: url('#{$image-theme-path-base}bg-services.png') no-repeat bottom center $nocolor;
+         background-size: cover;
+         position: absolute;
+         top: 50px;
+         left: 0;
+         @include size(100%, 100%);
+         z-index: 1;
+         opacity: 0;
+         transition: all 1.5s;
+      }
+      .service-item-content{
+         position: relative;
+         z-index: 2;
+         .box-icon{
+            position: relative;
+            font-size: 64px;
+            color: $black;
+            right: 0;
+            bottom: 0;
+            transition: all 0.5s ease;
+            display: block;
+            width: 100%;
+            svg{
+               width: 64px;
+               fill: $black;
+            }
+         }
+         .title{
+            font-size: 24px;
+            margin: 30px 0 25px;
+            span{
+               background: linear-gradient(to right, currentcolor 0%, currentcolor 100%) 0px 89% / 0px 2px no-repeat;
+               transition: all 0.5s ease;
+            }
+         }
+         .read-more{
+            margin-top: 30px;
+         }
+      }
+      .link-overlay{
+         position: absolute;
+         @include size(100%, 100%);
+         top: 0;
+         left: 0;
+         z-index: 11;
+      }
+      &:hover{
+         background-color: $black;
+         .service-box-background{
+            opacity: 0.2;
+            top: 0;
+         }
+         .service-item-content{
+            .title{
+               color: $white;
+               span{
+                  background-size: 100% 2px;
+               }
+            }
+            .desc{
+               color: rgba(255, 255, 255, 0.8);
+            }
+            .box-icon{
+               color: $white;
+            }
+            .read-more a{
+               color: $white;
+               &:before{
+                  width: 0;
+               }
+            }
+         }
+      }
+   }
+}
+
+.active{
+   .service-item{
+      &.style-1{
+         box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.07);
+      }
+      &.style-2{
+         box-shadow: 0px 10px 18px 0px rgba(0, 0, 0, 0.07);
+      }
+   }
+}
+.active.center{
+   .service-item{
+      &.style-2{
+         background-color: $black;
+         .service-box-background{
+            opacity: 0.2;
+            top: 0;
+         }
+         .service-item-content{
+            .title{
+               color: $white;
+               background-size: 100% 2px;
+            }
+            .desc{
+               color: rgba(255, 255, 255, 0.8);
+            }
+            .box-icon{
+               color: $white;
+            }
+            .read-more a{
+               color: $white;
+               &:before{
+                  width: 0;
+               }
+            }
+         }
+      }
+   }
+}

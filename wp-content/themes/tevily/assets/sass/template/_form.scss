@@ -1,0 +1,131 @@
+.wpcf7-form{
+	max-width: 950px;
+	margin: 0 auto;
+	.row{
+		margin: 0 -10px;
+		> div{
+			padding: 0 10px;
+		}
+	}
+	p{
+		margin-bottom: 20px;
+		font-weight: 600;
+	}
+	.wpcf7-form-control-wrap{
+		display: block;
+		margin-bottom: 20px;
+	} 
+	input[type*="email"], input[type*="text"], input[type*="tel"]{
+		width: 100%;
+		height: 60px;
+		padding: 0 15px;
+		border: none!important;
+		background: $theme-color-2;
+		font-weight: 500;
+		font-size: 14px;
+		border-radius: 8px;
+	}
+	select{ 
+		background: $theme-color-2;
+		line-height: 68px;
+		height: 68px;
+		width: 100%;
+		color: $body-color;
+		font-weight: 500;
+		font-size: 14px;
+		border-radius: 8px;
+	}
+	textarea{
+		width: 100%;
+		padding: 10px 20px;
+		max-height: 220px;
+		border: none!important;
+		background: $theme-color-2;
+		font-weight: 500;
+		font-size: 14px;
+		border-radius: 8px;
+		&::-webkit-input-placeholder { 
+		  color: $body-color;
+		}
+		&::-moz-placeholder {
+		  color: $body-color;
+		}
+		&:-ms-input-placeholder { 
+		  color: $body-color;
+		}
+		&:-moz-placeholder { 
+		  color: $body-color;
+		}
+		&.size-medium{
+			max-height: 135px;
+		}
+	}
+	.form-action{
+		text-align: center;
+		padding: 0;
+		position: relative;
+		input{
+			padding: 25px 50px 20px!important;
+		}
+		.ajax-loader{
+		  position: absolute;
+		  right: 0;
+		  top: 50%;
+		  margin-top: -8px;
+		}
+	}
+}
+
+.newsletter-form{
+  	position: relative;
+  	max-width: 710px;
+  	overflow: hidden;
+  	margin: 0 auto;
+  	input[type="email"]{
+	 	padding: 0 15px;
+	 	border-radius: 8px;
+	 	text-align: center;
+	 	width: 100%;
+	 	border: none;
+	 	line-height: 66px;
+	 	transition: all 0.35s;
+	 	font-size: 16px;
+	 	color: $footer-color;
+	 	background: rgba(0, 0, 0, 0.2);
+	 	&:focus, &:hover{ 
+			background: rgba(0, 0, 0, 0.3);
+	 	}
+	 	&::-webkit-input-placeholder { 
+		  color: $footer-color;
+		}
+		&::-moz-placeholder {
+		  color: $footer-color;
+		}
+		&:-ms-input-placeholder { 
+		  color: $footer-color;
+		}
+		&:-moz-placeholder { 
+		  color: $footer-color;
+		}
+  	}
+  .form-action{
+		width: 100%;
+		margin-top: 10px;
+		display: block;
+	 	input.newsletter-submit{
+			border: none;
+			width: 100%;
+			background: $theme-color;
+			color: $white;
+			height: 66px;
+			line-height: 33px;
+			transition: all 0.35s;
+			font-size: 15px;
+		 	&:hover{
+			 	opacity: 0.8;
+			 	background: $theme-color;
+			 	color: $white;
+		 	}
+	 	}
+  	}
+}

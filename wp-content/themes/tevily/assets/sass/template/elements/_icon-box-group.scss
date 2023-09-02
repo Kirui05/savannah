@@ -1,0 +1,179 @@
+.gsc-icon-box-group{
+	&.style-1{
+		.icon-box-item{
+			background: $white;
+			border-radius: 8px;
+			text-align: center;
+			width: 100%;
+			position: relative;
+			padding: 50px 15px 46px;
+			transition: all 0.35s;
+			margin-bottom: 30px;
+			&:after{
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: 1;
+				background: $theme-color;
+				width: 100%;
+				height: 0;
+				opacity: 0;
+				border-radius: 8px;
+				transition: all 0.35s;
+			}			
+			.link-overlay{
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: 11;
+				width: 100%;
+				height: 100%;
+			}
+			.icon-box-content{
+				position: relative;
+				z-index: 11;
+				.box-icon{
+					i{
+						font-size: 64px;
+						color: $theme-color;
+					}
+					svg{
+						width: 64px;
+						fill: $theme-color;
+					}
+				}
+				.title{
+					font-size: 17px;
+					margin: 10px 0 0;
+				}
+			}
+			&:hover, &.active{
+				box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+				&:after{
+					height: 100%;
+					opacity: 1;
+				}
+				.icon-box-content{
+					.box-icon{
+						i{
+							color: $white;
+						}
+						svg{
+							fill: $white;
+						}
+					}
+					.title{
+						color: $white;
+						a{
+							color: $white;
+						}
+					}
+				}
+			}
+		}
+		.swiper-slide.item-active.center{
+			.icon-box-item{
+				box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+				&:after{
+					height: 100%;
+					opacity: 1;
+				}
+				.icon-box-content{
+					.box-icon{
+						i{
+							color: $white;
+						}
+						svg{
+							fill: $white;
+						}
+					}
+					.title{
+						color: $white;
+						a{
+							color: $white;
+						}
+					}
+				}
+			}
+		}
+	}
+	&.style-2{
+		.icon-box-item{
+			background: $white;
+			border-radius: 8px;
+			text-align: center;
+			width: 100%;
+			position: relative;
+			padding: 50px 15px 46px;
+			transition: all 0.35s;
+			margin-bottom: 30px;
+			border: 1px solid $border-color;
+			&:after{
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: 1;
+				background: $theme-color;
+				width: 100%;
+				height: 0;
+				opacity: 0;
+				border-radius: 8px;
+				transition: all 0.35s;
+			}			
+			.link-overlay{
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: 11;
+				width: 100%;
+				height: 100%;
+			}
+			.icon-box-content{
+				position: relative;
+				z-index: 11;
+				text-align: center;
+				.box-icon{
+					@include size(80px, 80px);
+					border-radius: 50%;
+					background: $theme-color;
+					display: inline-block;
+					line-height: 90px;
+					transition: all 0.35s;
+					i{
+						font-size: 40px;
+						color: $white;
+					}
+					svg{
+						width: 40px;
+						fill: $white;
+					}
+				}
+				.title{
+					font-size: 18px;
+					margin: 16px 0 0;
+				}
+			}
+			&:hover, &.active{
+				box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+				.icon-box-content{
+					.box-icon{
+						background: $theme-color!important;
+						i{
+							color: $white!important;
+						}
+						svg{
+							fill: $white!important;
+						}
+					}
+				}
+			}
+		}
+		.swiper-slide.item-active.center{
+			.icon-box-item{
+				box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+			}
+		}
+	}
+}
