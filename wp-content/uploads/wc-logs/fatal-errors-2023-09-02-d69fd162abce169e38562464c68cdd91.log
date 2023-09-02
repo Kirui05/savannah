@@ -1,0 +1,100 @@
+2023-09-02T11:51:16+00:00 CRITICAL Uncaught Error: Call to undefined function create_function() in C:\xampp\htdocs\savannah\wp-content\plugins\slider-revolution-master\includes\framework\functions-wordpress.class.php:258
+Stack trace:
+#0 C:\xampp\htdocs\savannah\wp-content\plugins\slider-revolution-master\revslider.php(86): RevSliderFunctionsWP::registerWidget('RevSliderWidget')
+#1 C:\xampp\htdocs\savannah\wp-admin\includes\plugin.php(2318): include_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\savannah\wp-admin\includes\plugin.php(663): plugin_sandbox_scrape('slider-revoluti...')
+#3 C:\xampp\htdocs\savannah\wp-admin\plugins.php(58): activate_plugin('slider-revoluti...', 'http://localhos...', false)
+#4 {main}
+  thrown in C:\xampp\htdocs\savannah\wp-content\plugins\slider-revolution-master\includes\framework\functions-wordpress.class.php on line 258
+
+2023-09-02T11:51:29+00:00 CRITICAL Uncaught Error: Call to undefined function create_function() in C:\xampp\htdocs\savannah\wp-content\plugins\slider-revolution-master\includes\framework\functions-wordpress.class.php:258
+Stack trace:
+#0 C:\xampp\htdocs\savannah\wp-content\plugins\slider-revolution-master\revslider.php(86): RevSliderFunctionsWP::registerWidget('RevSliderWidget')
+#1 C:\xampp\htdocs\savannah\wp-admin\includes\plugin.php(2318): include_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\savannah\wp-admin\plugins.php(192): plugin_sandbox_scrape('slider-revoluti...')
+#3 {main}
+  thrown in C:\xampp\htdocs\savannah\wp-content\plugins\slider-revolution-master\includes\framework\functions-wordpress.class.php on line 258
+
+2023-09-02T11:51:29+00:00 CRITICAL Uncaught Error: Call to undefined function create_function() in C:\xampp\htdocs\savannah\wp-content\plugins\slider-revolution-master\includes\framework\functions-wordpress.class.php:258
+Stack trace:
+#0 C:\xampp\htdocs\savannah\wp-content\plugins\slider-revolution-master\revslider.php(86): RevSliderFunctionsWP::registerWidget('RevSliderWidget')
+#1 C:\xampp\htdocs\savannah\wp-admin\includes\plugin.php(2318): include_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\savannah\wp-admin\plugins.php(192): plugin_sandbox_scrape('slider-revoluti...')
+#3 {main}
+  thrown in C:\xampp\htdocs\savannah\wp-content\plugins\slider-revolution-master\includes\framework\functions-wordpress.class.php on line 258
+
+2023-09-02T11:53:36+00:00 CRITICAL Uncaught Error: Call to undefined function create_function() in C:\xampp\htdocs\savannah\wp-content\plugins\slider-revolution-master\includes\framework\functions-wordpress.class.php:258
+Stack trace:
+#0 C:\xampp\htdocs\savannah\wp-content\plugins\slider-revolution-master\revslider.php(86): RevSliderFunctionsWP::registerWidget('RevSliderWidget')
+#1 C:\xampp\htdocs\savannah\wp-admin\includes\plugin.php(2318): include_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\savannah\wp-admin\includes\plugin.php(663): plugin_sandbox_scrape('slider-revoluti...')
+#3 C:\xampp\htdocs\savannah\wp-admin\plugins.php(58): activate_plugin('slider-revoluti...', 'http://localhos...', false)
+#4 {main}
+  thrown in C:\xampp\htdocs\savannah\wp-content\plugins\slider-revolution-master\includes\framework\functions-wordpress.class.php on line 258
+
+2023-09-02T11:53:50+00:00 CRITICAL Uncaught Error: Call to undefined function create_function() in C:\xampp\htdocs\savannah\wp-content\plugins\slider-revolution-master\includes\framework\functions-wordpress.class.php:258
+Stack trace:
+#0 C:\xampp\htdocs\savannah\wp-content\plugins\slider-revolution-master\revslider.php(86): RevSliderFunctionsWP::registerWidget('RevSliderWidget')
+#1 C:\xampp\htdocs\savannah\wp-admin\includes\plugin.php(2318): include_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\savannah\wp-admin\plugins.php(192): plugin_sandbox_scrape('slider-revoluti...')
+#3 {main}
+  thrown in C:\xampp\htdocs\savannah\wp-content\plugins\slider-revolution-master\includes\framework\functions-wordpress.class.php on line 258
+
+2023-09-02T11:53:51+00:00 CRITICAL Uncaught Error: Call to undefined function create_function() in C:\xampp\htdocs\savannah\wp-content\plugins\slider-revolution-master\includes\framework\functions-wordpress.class.php:258
+Stack trace:
+#0 C:\xampp\htdocs\savannah\wp-content\plugins\slider-revolution-master\revslider.php(86): RevSliderFunctionsWP::registerWidget('RevSliderWidget')
+#1 C:\xampp\htdocs\savannah\wp-admin\includes\plugin.php(2318): include_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\savannah\wp-admin\plugins.php(192): plugin_sandbox_scrape('slider-revoluti...')
+#3 {main}
+  thrown in C:\xampp\htdocs\savannah\wp-content\plugins\slider-revolution-master\includes\framework\functions-wordpress.class.php on line 258
+
+2023-09-02T11:54:21+00:00 CRITICAL Uncaught Error: Call to undefined function create_function() in C:\xampp\htdocs\savannah\wp-content\plugins\slider-revolution-master\includes\framework\functions-wordpress.class.php:258
+Stack trace:
+#0 C:\xampp\htdocs\savannah\wp-content\plugins\slider-revolution-master\revslider.php(86): RevSliderFunctionsWP::registerWidget('RevSliderWidget')
+#1 C:\xampp\htdocs\savannah\wp-admin\includes\plugin.php(2318): include_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\savannah\wp-admin\includes\plugin.php(663): plugin_sandbox_scrape('slider-revoluti...')
+#3 C:\xampp\htdocs\savannah\wp-admin\plugins.php(58): activate_plugin('slider-revoluti...', 'http://localhos...', false)
+#4 {main}
+  thrown in C:\xampp\htdocs\savannah\wp-content\plugins\slider-revolution-master\includes\framework\functions-wordpress.class.php on line 258
+
+2023-09-02T11:54:36+00:00 CRITICAL Uncaught Error: Call to undefined function create_function() in C:\xampp\htdocs\savannah\wp-content\plugins\slider-revolution-master\includes\framework\functions-wordpress.class.php:258
+Stack trace:
+#0 C:\xampp\htdocs\savannah\wp-content\plugins\slider-revolution-master\revslider.php(86): RevSliderFunctionsWP::registerWidget('RevSliderWidget')
+#1 C:\xampp\htdocs\savannah\wp-admin\includes\plugin.php(2318): include_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\savannah\wp-admin\plugins.php(192): plugin_sandbox_scrape('slider-revoluti...')
+#3 {main}
+  thrown in C:\xampp\htdocs\savannah\wp-content\plugins\slider-revolution-master\includes\framework\functions-wordpress.class.php on line 258
+
+2023-09-02T11:54:36+00:00 CRITICAL Uncaught Error: Call to undefined function create_function() in C:\xampp\htdocs\savannah\wp-content\plugins\slider-revolution-master\includes\framework\functions-wordpress.class.php:258
+Stack trace:
+#0 C:\xampp\htdocs\savannah\wp-content\plugins\slider-revolution-master\revslider.php(86): RevSliderFunctionsWP::registerWidget('RevSliderWidget')
+#1 C:\xampp\htdocs\savannah\wp-admin\includes\plugin.php(2318): include_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\savannah\wp-admin\plugins.php(192): plugin_sandbox_scrape('slider-revoluti...')
+#3 {main}
+  thrown in C:\xampp\htdocs\savannah\wp-content\plugins\slider-revolution-master\includes\framework\functions-wordpress.class.php on line 258
+
+2023-09-02T15:44:32+00:00 CRITICAL Uncaught Error: Call to undefined function create_function() in C:\xampp\htdocs\savannah\wp-content\plugins\slider-revolution-master\includes\framework\functions-wordpress.class.php:258
+Stack trace:
+#0 C:\xampp\htdocs\savannah\wp-content\plugins\slider-revolution-master\revslider.php(86): RevSliderFunctionsWP::registerWidget('RevSliderWidget')
+#1 C:\xampp\htdocs\savannah\wp-admin\includes\plugin.php(2318): include_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\savannah\wp-admin\includes\plugin.php(663): plugin_sandbox_scrape('slider-revoluti...')
+#3 C:\xampp\htdocs\savannah\wp-admin\plugins.php(58): activate_plugin('slider-revoluti...', 'http://localhos...', false)
+#4 {main}
+  thrown in C:\xampp\htdocs\savannah\wp-content\plugins\slider-revolution-master\includes\framework\functions-wordpress.class.php on line 258
+
+2023-09-02T15:44:47+00:00 CRITICAL Uncaught Error: Call to undefined function create_function() in C:\xampp\htdocs\savannah\wp-content\plugins\slider-revolution-master\includes\framework\functions-wordpress.class.php:258
+Stack trace:
+#0 C:\xampp\htdocs\savannah\wp-content\plugins\slider-revolution-master\revslider.php(86): RevSliderFunctionsWP::registerWidget('RevSliderWidget')
+#1 C:\xampp\htdocs\savannah\wp-admin\includes\plugin.php(2318): include_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\savannah\wp-admin\plugins.php(192): plugin_sandbox_scrape('slider-revoluti...')
+#3 {main}
+  thrown in C:\xampp\htdocs\savannah\wp-content\plugins\slider-revolution-master\includes\framework\functions-wordpress.class.php on line 258
+
+2023-09-02T15:44:47+00:00 CRITICAL Uncaught Error: Call to undefined function create_function() in C:\xampp\htdocs\savannah\wp-content\plugins\slider-revolution-master\includes\framework\functions-wordpress.class.php:258
+Stack trace:
+#0 C:\xampp\htdocs\savannah\wp-content\plugins\slider-revolution-master\revslider.php(86): RevSliderFunctionsWP::registerWidget('RevSliderWidget')
+#1 C:\xampp\htdocs\savannah\wp-admin\includes\plugin.php(2318): include_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\savannah\wp-admin\plugins.php(192): plugin_sandbox_scrape('slider-revoluti...')
+#3 {main}
+  thrown in C:\xampp\htdocs\savannah\wp-content\plugins\slider-revolution-master\includes\framework\functions-wordpress.class.php on line 258
+
