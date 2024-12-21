@@ -87,7 +87,9 @@ class Full_Sync_Immediately extends Module {
 		}
 
 		if ( isset( $full_sync_config['users'] ) && 'initial' === $full_sync_config['users'] ) {
-			$full_sync_config['users'] = Modules::get_module( 'users' )->get_initial_sync_user_config();
+			$users_module = Modules::get_module( 'users' );
+			'@phan-var Users $users_module';
+			$full_sync_config['users'] = $users_module->get_initial_sync_user_config();
 		}
 
 		$this->update_status(
@@ -98,7 +100,7 @@ class Full_Sync_Immediately extends Module {
 			)
 		);
 
-		$range = $this->get_content_range( $full_sync_config );
+		$range = $this->get_content_range();
 		/**
 		 * Fires when a full sync begins. This action is serialized
 		 * and sent to the server so that it knows a full sync is coming.
@@ -412,8 +414,8 @@ class Full_Sync_Immediately extends Module {
 			/**
 			 * Select configured and not finished modules.
 			 *
+			 * @param Module $module
 			 * @return bool
-			 * @var $module Module
 			 */
 			function ( $module ) use ( $status ) {
 				// Skip module if not configured for this sync or module is done.
@@ -466,5 +468,4 @@ class Full_Sync_Immediately extends Module {
 	 * @param array $actions an array of actions, ignored for queueless sync.
 	 */
 	public function update_sent_progress_action( $actions ) { } // phpcs:ignore VariableAnalysis.CodeAnalysis.VariableAnalysis.UnusedVariable
-
 }

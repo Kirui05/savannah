@@ -188,6 +188,15 @@ class WC_Payments_Subscriptions_Event_Handler {
 
 		// Remove pending invoice ID in case one was recorded for previous failed renewal attempts.
 		$this->invoice_service->mark_pending_invoice_paid_for_subscription( $subscription );
+
+		// Record the store's Stripe Billing environment context on the payment intent.
+		$invoice = $this->invoice_service->record_subscription_payment_context( $wcpay_invoice_id );
+
+		// Update charge and transaction metadata - add order id for Stripe Billing.
+		$this->invoice_service->update_charge_details( $invoice, $order->get_id() );
+
+		// Update transaction customer details for Stripe Billing.
+		$this->invoice_service->update_transaction_details( $invoice, $order );
 	}
 
 	/**
@@ -248,6 +257,9 @@ class WC_Payments_Subscriptions_Event_Handler {
 
 		// Record invoice ID so we can trigger repayment on payment method update.
 		$this->invoice_service->mark_pending_invoice_for_subscription( $subscription, $wcpay_invoice_id );
+
+		// Record the store's Stripe Billing environment context on the payment intent.
+		$this->invoice_service->record_subscription_payment_context( $wcpay_invoice_id );
 	}
 
 	/**

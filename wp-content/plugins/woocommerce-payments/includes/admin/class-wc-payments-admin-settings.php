@@ -35,7 +35,14 @@ class WC_Payments_Admin_Settings {
 	 */
 	public function __construct( WC_Payment_Gateway_WCPay $gateway ) {
 		$this->gateway = $gateway;
+	}
 
+	/**
+	 * Initializes this class's WP hooks.
+	 *
+	 * @return void
+	 */
+	public function init_hooks() {
 		add_action( 'woocommerce_woocommerce_payments_admin_notices', [ $this, 'display_test_mode_notice' ] );
 		add_filter( 'plugin_action_links_' . plugin_basename( WCPAY_PLUGIN_FILE ), [ $this, 'add_plugin_links' ] );
 	}
@@ -50,7 +57,7 @@ class WC_Payments_Admin_Settings {
 				<p>
 					<b><?php esc_html_e( 'Test mode active: ', 'woocommerce-payments' ); ?></b>
 					<?php
-						echo sprintf(
+						printf(
 							/* translators: %s: WooPayments */
 							esc_html__( "All transactions are simulated. Customers can't make real purchases through %s.", 'woocommerce-payments' ),
 							'WooPayments'
@@ -89,9 +96,11 @@ class WC_Payments_Admin_Settings {
 	/**
 	 * Returns the URL of the configuration screen for this gateway, for use in internal links.
 	 *
+	 * @param array $query_args Optional additional query args to append to the URL.
+	 *
 	 * @return string URL of the configuration screen for this gateway
 	 */
-	public static function get_settings_url() {
-		return admin_url( add_query_arg( self::$settings_url_params, 'admin.php' ) ); // nosemgrep: audit.php.wp.security.xss.query-arg -- constant string is passed in.
+	public static function get_settings_url( $query_args = [] ) {
+		return admin_url( add_query_arg( array_merge( self::$settings_url_params, $query_args ), 'admin.php' ) ); // nosemgrep: audit.php.wp.security.xss.query-arg -- constant string is passed in.
 	}
 }
